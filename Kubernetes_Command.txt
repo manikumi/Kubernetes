@@ -7,3 +7,62 @@ kubectl get all
 # create pod
 kubectl run name --image=image_name
 kubectl run name --image=httpd
+
+# get all the pod
+kubectl get po
+
+# get version of kubectl
+kubectl version --client
+
+# get version of eksctl
+eksctl version
+
+# create deployment
+kubectl create deployment deployment_name --image=image_name --port=req_port --replicas=no_of_replicas
+kubectl create deployment demo-nginx --image=nginx --port=80 --replicas=2
+
+# get kubectl deployment
+kubectl get deployment
+
+# get replica set
+kubectl get replicaset
+
+# Expose the deployment as service
+kubectl expose deployment deployment_name --port=port_no --type=LoadBalancer
+
+# delete kubectl deployment
+kubectl delete deployment deployment_name
+kubectl delete deployment demo-nginx
+
+# create pod using manifest file
+kubectl apply -f pod_file
+kubectl apply -f pod.yml
+
+# describe the kubectl service
+kubectl describe server_name
+kubectl describe service/demo-service
+
+# get pod details
+kubectl get pod -o wide
+
+# delete kubectl service/deploymemt
+kubectl delete -f server/deployment file_name
+kubectl delete -f server/deployment name
+
+# delete eks cluster
+eksctl delete cluster cluster_name --region region_name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
