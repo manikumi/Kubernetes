@@ -1,0 +1,9 @@
+# get nodes of kubectl
+kubectl get nodes
+
+# get services of kubectl
+kubectl get all
+
+# create pod
+kubectl run name --image=image_name
+kubectl run name --image=httpd
